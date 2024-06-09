@@ -1,262 +1,476 @@
 /*-- -------------------------- -->
 <---           Hero             -->
 <--- -------------------------- -*/
+
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #hero-81 {
-    /* Centers button */
-    text-align: center;
-    /* 144px - 300px - leaving extra space for the navigation */
-    padding: clamp(9rem, 25.95vw, 18.75rem) 1rem 0;
-    /* 130px - 450px */
-    padding-bottom: clamp(12.125rem, 30.95vw, 28.125rem);
-    position: relative;
-    z-index: 1;
-    /* Prevents white rectangle pseudos from overlapping the sections below */
-    overflow: hidden;
+  #hero-227 {
+      /* Centers button */
+      text-align: center;
+      /* changes on tablet */
+      padding: 0 1rem;
+      position: relative;
+      z-index: 1;
+      /* prevents overflow from the lines extending past the screen width */
+      overflow: hidden;
   }
-  #hero-81:before {
-    /* Left side of the triangle */
-    content: '';
-    width: 31.25rem;
-    /* make really long so it covers the whole screen all the way to desktop */
-    height: 250rem;
-    background: #fff;
-    opacity: 1;
-    transform: rotate(-67deg);
-    transform-origin: center;
-    position: absolute;
-    display: block;
-    bottom: -139.6875rem;
-    /* this makes the right edge sit at the 50% line at all times */
-    right: 50%;
-    z-index: 0;
+  #hero-227 .cs-picture {
+      /* Background Image */
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -2;
   }
-  #hero-81:after {
-    /* Right side of the triangle */
-    content: '';
-    width: 31.25rem;
-    height: 250rem;
-    background: #fff;
-    opacity: 1;
-    transform: rotate(67deg);
-    transform-origin: center;
-    position: absolute;
-    display: block;
-    bottom: -139.6875rem;
-    /* this makes the left edge sit at the 50% line at all times */
-    left: 50%;
-    z-index: 0;
+  #hero-227 .cs-picture:before {
+      /* Black Color Overlay */
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: #000;
+      opacity: 0.6;
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      /* prevents the cursor from interacting with it */
+      pointer-events: none;
   }
-  #hero-81 .cs-background {
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -2;
+  #hero-227 .cs-picture img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      /* Makes image act like a background-image */
+      object-fit: cover;
   }
-  #hero-81 .cs-background:before {
-    /* Overlay */
-    content: '';
-    width: 100%;
-    height: 100%;
-    background: #000;
-    opacity: .7;
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    /* prevents the cursor from interacting with it */
-    pointer-events: none;
+  #hero-227 .cs-container {
+      width: 100%;
+      max-width: 80rem;
+      /* we put the padding top and bottom on the container instead of #Hero so the pseudo element lines go to the top and bottom of the section */
+      /* 144px - 300px - leaving extra space for the navigation */
+      /* changes on tablet */
+      padding: clamp(9rem, 25.95vw, 18.75rem) 0 0;
+      /* 60px - 200px */
+      margin: auto;
+      position: relative;
   }
-  #hero-81 .cs-background img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+  #hero-227 .cs-container:before {
+      /* Left Line */
+      content: "";
+      width: 1px;
+      height: 100%;
+      background: -moz-linear-gradient(
+          top,
+          rgba(250, 251, 252, 0.5) 0%,
+          rgba(250, 251, 252, 0) 100%
+      );
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(
+          top,
+          rgba(250, 251, 252, 0.5) 0%,
+          rgba(250, 251, 252, 0) 100%
+      );
+      /* Chrome10-25,Safari5.1-6 */
+      opacity: 1;
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
   }
-  #hero-81 .cs-container {
-    width: 100%;
-    max-width: 67.5rem;
-    margin: auto;
+  #hero-227 .cs-flex-group {
+      /* 60px - 220px */
+      margin-bottom: clamp(3.75rem, 15.5vw, 13.75rem);
+      /* changes on tablet */
+      margin-left: 1rem;
+      width: 80vw;
+      /* 464px - 562px */
+      max-width: clamp(29rem, 60vw, 35.125rem);
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      box-sizing: border-box;
   }
-  #hero-81 .cs-title {
-    /* 39px - 61px */
-    font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
-    font-weight: 700;
-    line-height: 1.2em;
-    text-align: center;
-    max-width: 51.8125rem;
-    /* 16px - 24px */
-    margin: 0 auto clamp(1rem, 4vw, 1.5rem);
-    color: #fff;
-    position: relative;
+  #hero-227 .cs-topper {
+      /* 13px - 16px */
+      font-size: clamp(0.8125rem, 1.6vw, 1rem);
+      line-height: 1.2em;
+      text-transform: uppercase;
+      text-align: left;
+      letter-spacing: 0.1rem;
+      font-weight: 700;
+      color: var(--bodyTextColorWhite);
+      margin-bottom: 1rem;
+      display: block;
   }
-  #hero-81 .cs-title:after {
-    /* Divider Line */
-    content: '';
-    /* 60px - 100px */
-    width: clamp(3.75rem, 9.5vw, 6.25rem);
-    /* 4px - 8px */
-    height: clamp(0.25rem, 0.8vw, 0.5rem);
-    /* 16px - 24px */
-    margin: clamp(1rem, 4vw, 1.5rem) auto clamp(1rem, 4vw, 1.5rem);
-    background: var(--primary);
-    opacity: 1;
-    position: relative;
-    display: block;
+  #hero-227 .cs-title {
+      /* 39px - 61px */
+      font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+      font-weight: 900;
+      line-height: 1.2em;
+      text-align: left;
+      width: 100%;
+      /* 32px - 40px */
+      margin: 0 auto clamp(2rem, 4vw, 2.5rem) 0;
+      background: var(--primary);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      position: relative;
   }
-  #hero-81 .cs-text {
-    /* 16px - 25px */
-    font-size: clamp(1rem, 1.95vw, 1.5625rem);
-    line-height: 1.5em;
-    text-align: center;
-    width: 100%;
-    /* 464px - 800px */
-    max-width: clamp(29rem, 60vw, 50rem);
-    margin: 0 auto;
-    /* 40px - 48px */
-    margin-bottom: clamp(2.5rem, 4vw, 3rem);
-    color: #fff;
+  #hero-227 .cs-first-item .cs-number{
+      background: var(--gradientorangepink);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      position: relative;
   }
-}
-/* Desktop - 1300px (To make image background parallax) */
-@media only screen and (min-width: 81.25rem) {
-  #hero-81 {
-    background: url("https://csimg.nyc3.digitaloceanspaces.com/Hero/kitchen.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* makes the parallax effect */
-    background-attachment: fixed;
+  #hero-227 .cs-second-item .cs-number{
+      background: var(--gradientpurpleblue);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      position: relative;
   }
-  #hero-81 .cs-background img {
-    display: none;
+  #hero-227 .cs-third-item .cs-number{
+      background: var(--gradientorangegreen);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      position: relative;
   }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #hero-81:before,
-  body.dark-mode #hero-81:after {
-    background: var(--dark);
+  #hero-227 .cs-text {
+      /* 16px - 20px */
+      font-size: clamp(1rem, 1.95vw, 1.25rem);
+      line-height: 1.5em;
+      text-align: left;
+      width: 100%;
+      /* 32px - 40px */
+      margin: 0 auto clamp(2rem, 4vw, 2.5rem) 0;
+      /* 40px - 48px */
+      margin-bottom: clamp(2.5rem, 4vw, 3rem);
+      color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #hero-81 .cs-background:before {
-    opacity: .85;
+  #hero-227 .cs-button-solid {
+      font-size: 1rem;
+      /* 46px - 56px */
+      line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+      width: 11.25rem;
+      text-decoration: none;
+      font-weight: 700;
+      margin: 0 1.25rem 1rem 0;
+      color: #fff;
+      padding: 0;
+      background: var(--gradient);
+      display: inline-block;
+      position: relative;
+      z-index: 1;
   }
-}
-/*-- -------------------------- -->
-<---         Services           -->
-<--- -------------------------- -*/
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-  #h-services-81 {
-    /* 40px - 100px */
-    padding: 0 1rem clamp(2.5rem, 7.9vw, 6.25rem) 1rem;
-    position: relative;
-    /* give a higher z index than the hero so it can sit on top */
-    z-index: 10;
+  #hero-227 .cs-button-solid:before {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 100%;
+      width: 0%;
+      background: #000;
+      opacity: 1;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: width 0.3s;
   }
-  #h-services-81 .cs-card-group {
-    width: 100%;
-    max-width: 29.0625rem;
-    margin: 0 auto 0;
-    /* negative margin pulls it up on top of the hero section */
-    /* -46px to -76px - we're calculating whatever clamp is and multiplying by -1
-            to make the value negative since clamp doesn't work with negative values */
-    margin-top: calc(clamp(5rem, 13vw, 4.75rem)*-1);
-    /* 40px - 60px top and bottom, 16px - 60px left & right */
-    padding: clamp(2.5rem, 4.7vw, 3.75rem) clamp(1rem, 4vw, 3.75rem);
-    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.05);
-    border-top: 8px solid var(--primary);
-    background-color: #fff;
-    /* prevents padding from affecting height and width */
-    box-sizing: border-box;
+  #hero-227 .cs-button-solid:hover:before {
+      width: 100%;
   }
-  #h-services-81 .cs-item {
-    list-style: none;
-    margin: 0 auto 2.5rem;
-    width: 100%;
-    max-width: 22.5rem;
+  #hero-227 .cs-button-transparent {
+      font-size: 1rem;
+      /* 46px - 56px */
+      line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+      width: 11.25rem;
+      /* 46px - 56px */
+      height: clamp(2.875rem, 5.5vw, 3.5rem);
+      text-decoration: none;
+      font-weight: 700;
+      margin: 0;
+      color: #fff;
+      padding: 0;
+      background-color: transparent;
+      border: 1px solid var(--bodyTextColorWhite);
+      box-sizing: border-box;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: 1;
   }
-  #h-services-81 .cs-item:last-of-type {
-    margin-bottom: 0;
+  #hero-227 .cs-button-transparent:before {
+      content: "";
+      position: absolute;
+      display: block;
+      background: #000;
+      opacity: 1;
+      /* so it sits on top of the border */
+      top: -1px;
+      left: -1px;
+      right: -1px;
+      bottom: -1px;
+      z-index: -1;
+      transform-origin: left;
+      /* this is what creates the grow affect on hover */
+      transform: scaleX(0);
+      transition: transform 0.3s;
   }
-  #h-services-81 .cs-icon {
-    /* 68px - 88px */
-    width: clamp(4.25rem, 8.8vw, 5.5rem);
-    /* 68px - 88px */
-    height: clamp(4.25rem, 8.8vw, 5.5rem);
-    margin: auto;
-    /* 20px - 24px */
-    margin-bottom: clamp(1.25rem, 5vw, 1.5rem);
-    background: var(--primary);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  #hero-227 .cs-button-transparent:hover:before {
+      transform: scaleX(1);
   }
-  #h-services-81 .cs-icon img {
-    /* 44px - 52px */
-    width: clamp(2.75rem, 5.8vw, 3.25rem);
-    height: auto;
+  #hero-227 .cs-button-transparent .cs-img {
+      display: block;
+      margin-right: 0.75rem;
   }
-  #h-services-81 .cs-title {
-    font-size: 1.25rem;
-    line-height: 1.2em;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 0 auto 0.5rem;
-    color: var(--headerColor);
+  #hero-227 .cs-card-group {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
   }
-  #h-services-81 .cs-text {
-    font-size: 1rem;
-    text-align: center;
-    line-height: 1.5em;
-    max-width: 22.5rem;
-    margin: 0 auto;
-    color: var(--bodyTextColor);
+  #hero-227 .cs-item {
+      list-style: none;
+      position: relative;
+      box-sizing: border-box;
+  }
+  #hero-227 .cs-item:before {
+      /* Top Line */
+      content: "";
+      width: 100vw;
+      height: 1px;
+      background: -moz-linear-gradient(
+          left,
+          rgba(250, 251, 252, 0.5) 0%,
+          rgba(250, 251, 252, 0) 100%
+      );
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(
+          left,
+          rgba(250, 251, 252, 0.5) 0%,
+          rgba(250, 251, 252, 0) 100%
+      );
+      /* Chrome10-25,Safari5.1-6 */
+      opacity: 1;
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+  #hero-227 .cs-item:last-of-type:after {
+      /* Bottom line on last card */
+      content: "";
+      width: 100vw;
+      height: 1px;
+      background: -moz-linear-gradient(
+          left,
+          rgba(250, 251, 252, 0.5) 0%,
+          rgba(250, 251, 252, 0) 100%
+      );
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(
+          left,
+          rgba(250, 251, 252, 0.5) 0%,
+          rgba(250, 251, 252, 0) 100%
+      );
+      /* Chrome10-25,Safari5.1-6 */
+      opacity: 1;
+      position: absolute;
+      display: block;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+  #hero-227 .cs-link {
+      text-align: left;
+      text-decoration: none;
+      /* changes on tablet */
+      padding: 1.75rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      position: relative;
+  }
+  #hero-227 .cs-link:hover:before {
+      opacity: 0.4;
+  }
+  #hero-227 .cs-link:before {
+      /* Hover Box */
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: #000;
+      opacity: 0;
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: opacity 0.3s;
+  }
+  #hero-227 .cs-number {
+      /* 20px - 25px */
+      font-size: clamp(1.25rem, 2vw, 1.5625rem);
+      line-height: 1.2em;
+      font-weight: 900;
+      /* 24px - 32px */
+      margin-bottom: clamp(1.5rem, 4vw, 2rem);
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      display: block;
+  }
+  #hero-227 .cs-h2 {
+      /* 16px - 20px */
+      font-size: clamp(1rem, 2vw, 1.25rem);
+      font-weight: 900;
+      line-height: 1.2em;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 1rem;
+      color: var(--bodyTextColorWhite);
+      position: relative;
+      z-index: 10000;
+  }
+  #hero-227 .cs-item-text {
+      /* 14px - 16px */
+      font-size: clamp(0.875rem, 3vw, 1rem);
+      margin: 0;
+      padding: 0;
+      max-width: 31.25rem;
+      color: var(--bodyTextColorWhite);
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #h-services-81 {
-    padding-bottom: 0;
+  #hero-227 {
+      /* 32px - 40px */
+      padding: 0 clamp(2rem, 5vw, 2.5rem);
   }
-  #h-services-81 .cs-card-group {
-    max-width: 80rem;
-    /* -76px to -320px - we're calculating whatever clamp is and multiplying by -1
-               to make the value negative since clamp doesn't work with negative values */
-    margin-top: calc(clamp(4.75rem, 20vw, 20rem)*-1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    column-gap: 2.5rem;
+  #hero-227 .cs-container:after {
+      /* Right Line */
+      content: "";
+      width: 1px;
+      height: 100%;
+      background: -moz-linear-gradient(
+          top,
+          rgba(250, 251, 252, 0) 0%,
+          rgba(250, 251, 252, 0.5) 100%
+      );
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(
+          top,
+          rgba(250, 251, 252, 0) 0%,
+          rgba(250, 251, 252, 0.5) 100%
+      );
+      /* Chrome10-25,Safari5.1-6 */
+      opacity: 1;
+      position: absolute;
+      display: block;
+      top: 0;
+      right: 0;
   }
-  #h-services-81 .cs-item {
-    /* Reset margin so it doesn't interfere with flexbox */
-    margin: 0;
+  #hero-227 .cs-flex-group {
+      /* 44px - 88px */
+      margin-left: clamp(2.75rem, 5.9vw, 5.5rem);
+  }
+  #hero-227 .cs-button-solid {
+      margin-bottom: 0;
+  }
+  #hero-227 .cs-card-group {
+      flex-direction: row;
+      position: relative;
+  }
+  #hero-227 .cs-card-group:before {
+      /* Top Line */
+      content: "";
+      /* make it extend past the left and right of the screen */
+      width: 150vw;
+      height: 1px;
+      background: -moz-linear-gradient(
+          left,
+          rgba(250, 251, 252, 0.5) 0%,
+          rgba(250, 251, 252, 0) 100%
+      );
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(
+          left,
+          rgba(250, 251, 252, 0.5) 0%,
+          rgba(250, 251, 252, 0) 100%
+      );
+      /* Chrome10-25,Safari5.1-6 */
+      opacity: 1;
+      position: absolute;
+      display: block;
+      top: 0;
+      /* these two properties center the line horizontally */
+      left: 50%;
+      transform: translateX(-50%);
+  }
+  #hero-227 .cs-item:before {
+      width: 1px;
+      height: 100vh;
+      background: -moz-linear-gradient(
+          top,
+          rgba(250, 251, 252, 0) 0%,
+          rgba(250, 251, 252, 0.5) 100%
+      );
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(
+          top,
+          rgba(250, 251, 252, 0) 0%,
+          rgba(250, 251, 252, 0.5) 100%
+      );
+      /* Chrome10-25,Safari5.1-6 */
+      top: auto;
+      left: auto;
+      right: 0;
+      bottom: -4rem;
+  }
+  #hero-227 .cs-item:nth-of-type(1):before {
+      height: 39.375rem;
+  }
+  #hero-227 .cs-item:last-of-type:before,
+  #hero-227 .cs-item:last-of-type:after {
+      display: none;
+  }
+  #hero-227 .cs-link {
+      /* 44px - 64px top & bottom, 48px - 88px left & right */
+      padding: clamp(2.75rem, 5.9vw, 5.5rem) clamp(3rem, 5.9vw, 5.5rem);
   }
 }
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #h-services-81 .cs-card-group {
-    background: var(--medium);
+/* Desktop Parallax Effect - 1300px */
+@media only screen and (min-width: 81.25rem) {
+  #hero-227 {
+      background: url("https://csimg.nyc3.digitaloceanspaces.com/Hero/Background.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      /* creates parallax effect on background image */
+      background-attachment: fixed;
+      /* remove img tag so we can make parallax work */
   }
-  body.dark-mode #h-services-81 .cs-icon {
-    background: var(--darkTint);
-  }
-  body.dark-mode #h-services-81 .cs-title {
-    color: #fff;
-  }
-  body.dark-mode #h-services-81 .cs-text {
-    color: #fff;
+  #hero-227 .cs-picture img {
+      display: none;
   }
 }
+
+                              
+
 /*-- -------------------------- -->
 <---          About Us          -->
 <--- -------------------------- -*/

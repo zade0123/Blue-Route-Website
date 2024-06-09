@@ -47,10 +47,38 @@
     <!-- ============================================ -->
 
     <header id="cs-navigation">
+        <div class="cs-top-bar">
+            <div class="cs-top-container">
+                <!--We have 2 cs-logo links, this is because on mobile it needs to be in the same container as the nav toggle, and on desktop it needs to be in the top container. This is the simplest solution to do this-->
+                <a href="" class="cs-logo cs-top-logo" aria-label="back to home">
+                    <!--White Logo-->
+                    <!--This nav has an on scroll effect to rotate the images to swap the light version with the dark version so it shows up on the white background that animates behind the nav-->
+                    <img class="cs-default" src="assets\images\blueroutelogowhite.png" alt="logo" width="" aria-hidden="true" decoding="async">
+                    <!--Dark Logo-->
+                    <img class="cs-onscroll" src="assets\images\blueroutelogo.png" alt="logo" width="300" aria-hidden="true" decoding="async">
+                </a>
+                <div class="cs-top-social">
+                    <a href="" class="cs-social-link">
+                        <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/clock-stroke-white.svghttps://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/facebook-lgrey.svg" alt="logo" width="16" height="16" aria-hidden="true" decoding="async">
+                    </a>
+                    <a href="" class="cs-social-link">
+                        <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/clock-stroke-white.svghttps://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-lgrey.svg" alt="logo" width="16" height="16" aria-hidden="true" decoding="async">
+                    </a>
+                    <a href="" class="cs-social-link">
+                        <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/clock-stroke-white.svghttps://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-lgrey.svg" alt="logo" width="16" height="16" aria-hidden="true" decoding="async">
+                    </a>
+                </div>
+                <a href="" class="cs-button-solid cs-nav-button">Request A Quote</a>
+            </div>
+        </div>
         <div class="cs-container">
             <!--Nav Logo-->
-            <a href="/index.html" class="cs-logo" aria-label="back to home">
-                <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Flogo-black.svg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+            <a href="" class="cs-logo cs-bottom-logo" aria-label="back to home">
+                <!--White Logo-->
+                <!--This nav has an on scroll effect to rotate the images to swap the light version with the dark version so it shows up on the white background that animates behind the nav-->
+                <img class="cs-default" src="assets\images\blueroutelogowhite.png" alt="logo" width="300" aria-hidden="true" decoding="async">
+                <!--Dark Logo-->
+                <img class="cs-onscroll" src="assets\images\blueroutelogo.png" alt="logo" width="300" aria-hidden="true" decoding="async">
             </a>
             <!--Navigation List-->
             <nav class="cs-nav" role="navigation">
@@ -66,100 +94,93 @@
                 <div class="cs-ul-wrapper">
                     <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
                         <li class="cs-li">
-                            <a href="/index.html" class="cs-li-link cs-active">
+                            <a href="" class="cs-li-link cs-active">
                                 Home
                             </a>
                         </li>
                         <li class="cs-li">
-                            <a href="/about.html" class="cs-li-link">
+                            <a href="" class="cs-li-link">
                                 About
                             </a>
                         </li>
                         <li class="cs-li">
-                            <a href="/portfolio.html" class="cs-li-link">
-                                Portfolio
+                            <a href="" class="cs-li-link">
+                                Services
                             </a>
                         </li>
                         <li class="cs-li">
-                            <a href="/reviews.html" class="cs-li-link">
-                                Reviews
+                            <a href="" class="cs-li-link">
+                                Blog
                             </a>
                         </li>
                         <li class="cs-li">
-                            <a href="/contact.html" class="cs-li-link">
+                            <a href="" class="cs-li-link">
                                 Contact
                             </a>
                         </li>
                     </ul>
                 </div>
             </nav>
-            <a href="/contact.html" class="cs-button-solid cs-nav-button">Contact Us</a>
-            <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
-            <button id="dark-mode-toggle" aria-label="dark mode toggle">
-                <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
-                <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
-            </button>
         </div>
     </header>
+                                
 
     <main id="main">
         <!-- ============================================ -->
         <!--                    Hero                      -->
         <!-- ============================================ -->
 
-        <section id="hero-81">
+        <section id="hero-227">
             <div class="cs-container">
-                <h1 class="cs-title">Construction & Maintenance Experts in New York City</h1>
-                <p class="cs-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. At quis donec eget tellus turpis imperdiet aenean libero. 
-                </p>
-                <a href="" class="cs-button-solid">Request Appointment</a>
+                <div class="cs-flex-group">
+                    <span class="cs-topper">Welcome to Blue Route</span>
+                    <h1 class="cs-title">Creative Marketers Who Dare to be Practical</h1>
+                    <p class="cs-text">
+                        No buzzwords, no hacks, no silver bullets. Just an honest approach to successful digital marketing. Fortune 500 experiences and big agency chops delivered with the care, commitment, and passion of small business owners.
+                    </p>
+                    <a href="" class="cs-button-solid">Explore More</a>
+                    <a href="" class="cs-button-transparent">Learn More</a>
+                </div>
+                <!--Service Cards-->
+                <ul class="cs-card-group">
+                    <li class="cs-item cs-first-item">
+                        <a class="cs-link" href="">
+                            <span class="cs-number">Core Performance Channels</span>
+                            <h2 class="cs-h2">Choose Place Activity and Time</h2>
+                            <p class="cs-item-text">
+                                Dui sapien eget mi proin sed libero enim sed. Commodo elit at imperdiet dui accumsan sit amet nulla facilisi.
+                            </p>
+                        </a>
+                    </li>
+                    <li class="cs-item cs-second-item">
+                        <a class="cs-link" href="">
+                            <span class="cs-number">Customer Data & Analytics</span>
+                            <h2 class="cs-h2">Find People With The Same Ideas</h2>
+                            <p class="cs-item-text">
+                                Dui sapien eget mi proin sed libero enim sed. Commodo elit at imperdiet dui accumsan sit amet nulla facilisi.
+                            </p>
+                        </a>
+                    </li>
+                    <li class="cs-item cs-third-item">
+                        <a class="cs-link" href="">
+                            <span class="cs-number">Marketing Strategy & Consultation</span>
+                            <h2 class="cs-h2">Start Chat And Ask Them To Go</h2>
+                            <p class="cs-item-text">
+                                Dui sapien eget mi proin sed libero enim sed. Commodo elit at imperdiet dui accumsan sit amet nulla facilisi.
+                            </p>
+                        </a>
+                    </li>
+                </ul>
             </div>
 
             <!-- Background Image -->
-            <picture class="cs-background">
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Hero/kitchen-m.jpg">
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Hero/kitchen.jpg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Hero/kitchen.jpg" alt="kitchen" width="2250" height="1500" aria-hidden="true">
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Hero/Background-m.jpg">
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Hero/Background.jpg">
+                <img decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Hero/Background.jpg" alt="mountains" width="2250" height="1500" aria-hidden="true">
             </picture>
         </section>
-
-        <!-- ============================================ -->
-        <!--                   Services                   -->
-        <!-- ============================================ -->
-
-        <section id="h-services-81">
-            <ul class="cs-card-group">
-                <li class="cs-item">
-                    <picture class="cs-icon">
-                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Hero/toolbox.svg" alt="appliance" width="52" height="52" aria-hidden="true">
-                    </picture>
-                    <h2 class="cs-title">Full Kitchen Remodel</h2>
-                    <p class="cs-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus, dolor enim, elit. 
-                    </p>
-                </li>
-                <li class="cs-item">
-                    <picture class="cs-icon">
-                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Hero/buildings.svg" alt="appliance" width="52" height="52" aria-hidden="true">
-                    </picture>
-                    <h2 class="cs-title">Exterior Repairs</h2>
-                    <p class="cs-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus, dolor enim, elit. 
-                    </p>
-                </li>
-                <li class="cs-item">
-                    <picture class="cs-icon">
-                        <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Hero/gear.svg" alt="appliance" width="52" height="52" aria-hidden="true">
-                    </picture>
-                    <h2 class="cs-title">Utility Maintenance</h2>
-                    <p class="cs-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus, dolor enim, elit. 
-                    </p>
-                </li>
-            </ul>
-        </section>                     
-                                
+                                    
         <!-- ============================================ -->
         <!--                   About Us                   -->
         <!-- ============================================ -->
@@ -174,7 +195,7 @@
                     <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/SideBySide/room.jpg" alt="room" width="494" height="700">
                 </picture>
                 <div class="cs-content">
-                    <span class="cs-topper">Who We ARe</span>
+                    <span class="cs-topper">Who We Are</span>
                     <h2 class="cs-title">Stitch Painting Services</h2>
                     <p class="cs-text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -523,7 +544,7 @@
     </footer>
                                 
 
-    <script defer src="/assets/js/nav.js"></script>
+    <script defer src="assets/js/nav.js"></script>
 
     <!--Gallery JS-->
     <script>
