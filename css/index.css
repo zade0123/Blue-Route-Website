@@ -54,7 +54,7 @@
       /* we put the padding top and bottom on the container instead of #Hero so the pseudo element lines go to the top and bottom of the section */
       /* 144px - 300px - leaving extra space for the navigation */
       /* changes on tablet */
-      padding: clamp(9rem, 25.95vw, 18.75rem) 0 0;
+      padding: clamp(12rem, 25.95vw, 18.75rem) 0 0;
       /* 60px - 200px */
       margin: auto;
       position: relative;
@@ -510,6 +510,7 @@
       width: 100%;
       /* changes at tablet */
       max-width: 27.125rem;
+      padding: 0 10px;
       display: flex;
       flex-direction: column;
       /* centers content horizontally, set to flex-start to left align */
