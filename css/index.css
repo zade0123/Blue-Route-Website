@@ -925,18 +925,18 @@
   #services-294 .cs-logo-carousel::after{
     position: absolute;
     top: 0;
-    width: 75px;
+    width: 85px;
     height: 100%;
     content: "";
-    z-index: 2;
+    z-index: 5;
   }
   #services-294 .cs-logo-carousel::before {
-    left: 0px;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0), #f7f7f7);
+    left: -10px;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #ffffff);
   }
   #services-294 .cs-logo-carousel::after {
-    right: 0px;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), #f7f7f7);
+    right: -10px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff);
   }
   #services-294 .cs-logo-carousel:hover .cs-logo-slide {
     animation-play-state: paused;
@@ -948,6 +948,7 @@
   }
   #services-294 .cs-logo {
     width: 100px;
+    max-height: 50px;
     margin: 0 20px;
   }
   #services-294 .cs-card-group {
